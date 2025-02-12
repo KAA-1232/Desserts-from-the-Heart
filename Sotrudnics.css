@@ -1,0 +1,134 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0e3;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #c77a2c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #c77a2c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для шапки */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0c5a4;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для секций */
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Стили для слайдшоу */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Скрываем слайды по умолчанию */
+.slide {
+    display: none;
+}
+
+/* Анимация затухания */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Стили для точек-индикаторов */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Стили для опыта работы */
+.job {
+    margin-bottom: 15px;
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0c5a4;
+}
+
+/* Медиа-запрос для адаптации под телефоны */
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
