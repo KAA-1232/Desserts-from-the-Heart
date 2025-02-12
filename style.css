@@ -258,7 +258,7 @@ body{
     text-decoration: none;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 405px) {
     .boxeat-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Две колонки */
