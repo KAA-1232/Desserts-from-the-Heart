@@ -258,6 +258,103 @@ body{
     text-decoration: none;
 }
 
+/* Общие стили для блока .e426 */
+.e426 {
+    display: none;
+    text-align: center;
+    padding: 40px; /* Увеличен отступ */
+    background-color: #fff; /* Чистый белый фон */
+    border: none; /* Убрана граница */
+    margin-top: 40px; /* Увеличен верхний отступ */
+    border-radius: 20px; /* Более закругленные углы */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Усиленная, но мягкая тень */
+    font-family: 'Roboto', sans-serif; /* Более читаемый шрифт */
+    max-width: 800px; /* Ограничение максимальной ширины блока */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Стили для заголовка h2 */
+  .e426 h2 {
+    font-size: 1.75em; /* Увеличен размер шрифта */
+    color: #2c3e50; /* Темно-синий цвет для текста */
+    margin-bottom: 25px; /* Увеличен отступ */
+    line-height: 1.5;
+    font-weight: 500; /* Средняя толщина шрифта */
+  }
+  
+  /* Стили для изображения QR-кода */
+  .e426 img {
+    max-width: 220px; /* Незначительное увеличение ширины */
+    height: auto;
+    margin: 25px auto; /* Увеличен отступ */
+    display: block;
+    border-radius: 15px; /* Более закругленные углы */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Усиленная тень */
+  }
+  
+  /* Стили для заголовка h1 */
+  .e426 h1 {
+    font-size: 1.3em;
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 40px; /* Увеличен отступ */
+    font-weight: 400; /* Стандартная толщина шрифта */
+  }
+  
+  /* Стили для ссылки (кнопки) */
+  .e426 a {
+    display: inline-block;
+    padding: 18px 36px; /* Увеличены отступы */
+    background-color: #4bf754; /* Яркий синий цвет */
+    color: #fff; /* Белый текст */
+    text-decoration: none;
+    border-radius: 100px; /* Полностью круглая кнопка */
+    font-size: 1.2em; /* Увеличен размер шрифта */
+    font-weight: 600; /* Полужирный текст */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Усиленная тень */
+    cursor: pointer;
+    /* Улучшенная анимация пульсации */
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Более плавная анимация */
+  }
+  
+  /* Стили для пульсации при наведении */
+  .e426 a:hover {
+    background-color: #39ff43; /* Более темный синий */
+    transform: translateY(-5px); /* Больший подъем при наведении */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.35); /* Еще более сильная тень */
+  }
+  
+  /* Улучшенная анимация пульсации */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    }
+  
+    50% {
+      transform: scale(1.08); /* Более выраженное увеличение */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.35);
+    }
+  
+    100% {
+      transform: scale(1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+ 
+  /* Медиа-запрос для экранов шире 425px */
+  @media (min-width: 426px) {
+    .e426 {
+      display: block; /* Показываем блок на экранах шире 425px */
+    }
+    .HairBox, .MainBox, .fon, .fon2, .fon3, .fon4{
+        display: none;
+    }
+  }
+
 @media (max-width: 405px) {
     .boxeat-container {
         display: grid;
